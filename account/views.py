@@ -73,7 +73,7 @@ class ChangeUsernameView(LoginRequiredMixin, View):
     username = request.POST["username"]
     if username != request.user.username:
       try:
-        change_username(request.user, -100 * (request.user.username_change_attempt ** 2), username)
+        change_username(request.user, -(request.user.username_change_attempt), username)
         request.user.username_change_attempt += 1
         request.user.save(update_fields=["username_change_attempt"])
       except PermissionError as e:

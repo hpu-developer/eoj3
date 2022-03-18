@@ -3,7 +3,7 @@
 {% from 'components/profile_card.jinja2' import profile_card with context %}
 {% from 'components/blog_preview.jinja2' import blog_preview %}
 
-{% block page_header %}ECNU Online Judge{% endblock %}
+{% block page_header %}HPU Online Judge{% endblock %}
 
 {% block content %}
 
@@ -27,14 +27,24 @@
 
       <div class="ui fluid card">
         <div class="content">
+          <div class="header">一言 © Hitokoto</div>
+        </div>
+        <div class="content">
+          <div class="description">
+			<p id="hitokoto">:D 获取中...</p>
+			<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+		  </div>
+        </div>
+      </div>
+      <div class="ui fluid card">
+        <div class="content">
           <div class="header">公告牌</div>
         </div>
         <div class="content">
           <div class="description">{{ bulletin | markdown | safe }}</div>
         </div>
       </div>
-
-      <div class="ui fluid card">
+	  <div class="ui fluid card">
         <div class="content">
           <div class="header">牛逼网友</div>
         </div>
