@@ -2,7 +2,7 @@
 
 ## Reference
 
-+ <https://github.com/ultmaster/eoj3>
++ <https://github.com/F0RE1GNERS/eoj3>
 
 ## How to build
 
